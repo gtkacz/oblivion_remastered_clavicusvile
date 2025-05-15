@@ -1,0 +1,1 @@
+ffmpeg -i %1 -filter_complex "[0]geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255'" %1-converted.png
